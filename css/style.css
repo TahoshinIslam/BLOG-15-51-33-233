@@ -1,0 +1,153 @@
+:root{
+    --primary-color:#04c33a;
+    --secondary-color:#4caf50;
+    --heading-color: #333;
+    --text-color: #515151;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.fixed-top{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background: #04c33a;
+}
+.hero_section{
+    background-image:url(../img/cover1.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 230px 0;
+
+
+    .section_heading{
+font-size: 30px;
+font-weight: 500;
+color: white;
+.text-align:center;
+font-style: italic;
+
+    }
+    .section_subheading{
+font-size: 60px;
+font-weight: 700;
+color: white;
+margin-top: 20px;
+
+    }
+    .btn-custom{
+        background: var(--primary-color);
+        color:white;
+        padding: 14px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 20px;
+
+    }
+}
+/* .service_section */
+
+.service_section{
+    padding: 100px,0;
+    .section_heading{
+        font-size:60px;
+        font-weight: 700;
+        color:var(--heading-color);
+        margin-top: 20px;
+        padding: 0,300px;
+    }
+    .service_box{
+margin-bottom: 40px;
+        .service_icon {
+                background-color: var(--primary-color);
+                padding: 40px;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 50px;
+                color: #fff;
+            }
+            h2{
+                font-size:26px;
+                font-weight: 700;
+                margin-top:6px
+            }
+            p{
+                font-size:26px;
+                font-weight:500;
+                color:var(--text-color);
+                margin-top: 10px;
+            }
+            
+        }
+    }
+                /* .portfolio_section */
+.portfolio_section{
+        background: #c2bfbf;
+
+            padding: 100px, 0;
+            
+                .section_heading {
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: var(--heading-color);
+                    margin-top: 20px;
+                
+                }
+                .section_subheading {
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--text-color);
+                margin-top: 10px;
+                padding: 0 300px;
+        }
+                .portfoilo_item{
+                    background: #fafafa;
+                
+                    border-radius: 20px;
+                    overflow: hidden;
+                    padding:30px 20px;
+                    .portfolio_content{
+                        h2{
+                            font-size:26px;
+                            font-weight: 700;
+                            margin-top: 15px;
+                        }
+                        p{
+                            font-size: 16px;
+                            color:var(--text-color);
+                            margin-top: 10px;
+                        }
+                        a{
+                            background: var(--primary-color);
+                            color: black;
+                            padding: 14px 40px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-top: 20px;
+                            text-decoration: none;
+                            border-radius: 6px;
+                            margin-top: 8px;
+                            display: inline-block;
+                            transition: all 0.3s linear;
+                            &:hover{
+                                background: var(--secondary-color);
+                                color:white;
+
+
+                            }
+                        }
+                    }
+                }
+}
+.footer{
+    padding: 100px 0;
+    background: var(--secondary-color);
+}
